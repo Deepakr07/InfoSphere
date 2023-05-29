@@ -14,6 +14,7 @@ body{
     color: #ffffff;
 
 }
+/* header styling */
 .header{
     background-color: #191919;
     position: fixed;
@@ -51,6 +52,12 @@ nav ul li:hover{
     border-left: .5px solid white;
     border-right: .5px solid white;
 }
+/* header styling completed */
+
+
+/* main news section starts */
+    
+    /* left side */
 .topHeadlines{
     padding: 100px 50px 40px;
     width: 100%;
@@ -74,7 +81,21 @@ nav ul li:hover{
 .topHeadlines .left .text{
     padding: 20px 15px 10px;
 }
-.topHeadlines .left .text .title{
+.topHeadlines .left .text .title h2{
     font-size: 20px;
     letter-spacing: 1px;
+    cursor: pointer;
+    display: inline;
 }
+.topHeadlines .left .text .title h2:hover{
+    text-decoration: underline;
+    
+}
+.topHeadlines .left .text .description{
+    font-size: 15px;
+    margin-top: 10px;
+    color: #aaa;
+    letter-spacing: 1px;
+}
+    /* left side completed */
+    
