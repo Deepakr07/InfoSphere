@@ -98,4 +98,21 @@ nav ul li:hover{
     letter-spacing: 1px;
 }
     /* left side completed */
-    
+
+    /* right side begins */
+.topHeadlines .right{
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+    background-color: grey;
+}
+.topHeadlines .right > .title{
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+.topHeadlines .right .topNews{
+    padding: 10px;
+    height: 85%;
+    border: 2px solid white;
+}
