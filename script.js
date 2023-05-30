@@ -13,7 +13,7 @@ let sportsNewsBox = document.querySelector("#sportsNews .newsBox");
 
 let businessNewsBox = document.querySelector("#businessNews .newsBox");
 
-let techNewsBox = document.querySelector("#sportsNews .newsBox");
+let techNewsBox = document.querySelector("#techNews .newsBox");
 
 //Initialization Ends
 
@@ -98,7 +98,7 @@ const insertSportsNewsBox = (data) =>{
     });
     sportsNewsBox.innerHTML = htmlData;
 }
-fetchData('sports',5).then(insertSportsNewsBox);
+fetchData('sports',10).then(insertSportsNewsBox);
 
 //2.Business Category
 const insertBusinessNewsBox = (data) =>{
@@ -121,6 +121,29 @@ const insertBusinessNewsBox = (data) =>{
     });
     businessNewsBox.innerHTML = htmlData;
 }
-fetchData('business',5).then(insertBusinessNewsBox);
+fetchData('business',10).then(insertBusinessNewsBox);
 
+
+//2.Tech Category
+const insertTechNewsBox = (data) =>{
+    let htmlData = "";
+    data.forEach((item)=>{
+        htmlData += `
+            <div class="newsCard">
+                <img src="${item.urlToImage}" alt="">
+                <div class="text">
+                    <div class="title">
+                        <a href= ${item.url} target = "_blank">
+                            <p>
+                            ${item.title}
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>`
+    });
+    techNewsBox.innerHTML = htmlData;
+}
+fetchData('technology',10).then(insertTechNewsBox);
 
