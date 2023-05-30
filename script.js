@@ -100,3 +100,27 @@ const insertSportsNewsBox = (data) =>{
 }
 fetchData('sports',5).then(insertSportsNewsBox);
 
+//2.Business Category
+const insertBusinessNewsBox = (data) =>{
+    let htmlData = "";
+    data.forEach((item)=>{
+        htmlData += `
+            <div class="newsCard">
+                <img src="${item.urlToImage}" alt="">
+                <div class="text">
+                    <div class="title">
+                        <a href= ${item.url} target = "_blank">
+                            <p>
+                            ${item.title}
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>`
+    });
+    businessNewsBox.innerHTML = htmlData;
+}
+fetchData('business',5).then(insertBusinessNewsBox);
+
+
