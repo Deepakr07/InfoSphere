@@ -28,11 +28,12 @@ const insertFlashNews = (data)=>{
     </a>`; // Adding Flash News Title to the page
     breakingNewsDesc.innerHTML =`${data[random].description}`;
 }
-fetchData('general',5).then(insertFlashNews); 
+window.addEventListener("load",fetchData('general',5).then(insertFlashNews));
 
 
 /**Function For Inserting News to the Top Headlines Section */
 const insertTopHeadlines =  (data)=>{
+    
     let htmlData = '';
     let title = '';
 
@@ -59,6 +60,6 @@ const insertTopHeadlines =  (data)=>{
 });
 topHeadlines.innerHTML = htmlData;
 }
-    fetchData('general',20).then(insertTopHeadlines);
+    fetchData('general',15).then(insertTopHeadlines);
 
 

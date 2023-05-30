@@ -164,6 +164,12 @@ nav ul li:hover{
 .topHeadlines .right .topNews .news .text .title{
     cursor: pointer;
 }
+
+.topHeadlines .right .topNews .news .text .title a{
+    color: white;
+    text-decoration: none;
+}
+
 .topHeadlines .right .topNews .news .text .title:hover{
     text-decoration: underline;
 }
