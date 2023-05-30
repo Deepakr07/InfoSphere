@@ -19,7 +19,7 @@ let techNewsBox = document.querySelector("#techNews .newsBox");
 
 
 /** API KEY*/
-const apiKey = "191f38e21db040aea2148a0a1e4e09a1";
+const apiKey = "64c6bd38e1e946fc9c48788af137509d";
 
 /*Async function to fetch data*/
 const fetchData = async (categry,pageSize)=>{
@@ -124,7 +124,7 @@ const insertBusinessNewsBox = (data) =>{
 fetchData('business',10).then(insertBusinessNewsBox);
 
 
-//2.Tech Category
+//3.Tech Category
 const insertTechNewsBox = (data) =>{
     let htmlData = "";
     data.forEach((item)=>{
