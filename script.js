@@ -1,4 +1,4 @@
-
+let breakingImage = document.querySelector("#breakingImg");
 
 
 
@@ -12,6 +12,12 @@ const fetchData = async (categry,pageSize)=>{
     const data = await fetch(url);
     let response = await data.json();
     console.log(response);
+    return response.articles;
 
 }
-// fetchData('general',5); 
+
+/**Adding Flash news to the Flash News Section */
+const insertFlashNews = (data)=>{
+    breakingImage.innerHTML = `<img src="${data[0].urlToImage}" alt="">`
+}
+fetchData('general',5).then(insertFlashNews); 
