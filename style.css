@@ -1,3 +1,4 @@
+/*Custom font url*/
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Open+Sans&family=Poppins:wght@600&family=Ubuntu:wght@400;500;700&display=swap');
 
 *{
@@ -151,6 +152,8 @@ nav ul li:hover{
 .topHeadlines .right .topNews .news .text .title:hover{
     text-decoration: underline;
 }
+
+/* Seond section of the page starts*/
 .page2{
     width: 100%;
     padding: 50px;
@@ -175,12 +178,13 @@ nav ul li:hover{
 .page2 .news .newsBox {
     margin-top: 30px;
     padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  background-color: grey;
-  width: 100%;
-  grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: grey;
+    width: 100%;
+    grid-gap: 20px;
 }
+/* styling news cards begins */
 
 .page2 .news .newsBox .newsCard {
   min-height: 250px;
@@ -192,7 +196,7 @@ nav ul li:hover{
     background-color:#a04;
 }
 .page2 .news .newsBox .newsCard .text{
-    padding: 10px;
+    padding: 1em;
 }
 .page2 .news .newsBox .newsCard .text .title p{
     cursor: pointer;
@@ -202,15 +206,21 @@ nav ul li:hover{
 .page2 .news .newsBox .newsCard .title p:hover{
     text-decoration: underline;
 }
-.icons a{
-    color: white;
-}
+/* styling news cards finished */
+/* Second section ends */
+
+/* styling footer section begins */
 footer{
     min-height: 250px;
     color: #191919;
     width: 100%;
-    padding: 40px 60px 0
+    padding: 3em 4em 0
 }
+
+.icons a{
+color: white;
+}
+
 .box{
     width: 100%;
     margin: auto auto;
@@ -221,7 +231,7 @@ footer{
     display: flex;
     justify-content: space-between;
     flex: 1;
-    padding: 30px
+    padding: 2.5em;
 }
 .box .right{
     flex: 1;
@@ -255,12 +265,13 @@ footer{
     margin-left: 40px;
 }
 .right #subscribe{
-    padding: 10px;
+    padding: 1em;
     width: 65%;
     border-radius: 5px;
     border: none;
 }
 .right #sub-btn{
+    
     padding: 10px;
     font-weight: bold;
     color: white;
@@ -271,6 +282,11 @@ footer{
     border: 1px solid white;
     cursor: pointer;
 }
+#sub-btn:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
 .copyrights{
     width: 100%;
     align-items: center;
@@ -281,3 +297,5 @@ footer{
     opacity: 60%;
     padding: 10px;
 }
+
+/* footer section ends */
