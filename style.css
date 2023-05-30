@@ -201,7 +201,7 @@ nav ul li:hover{
     padding: 10px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color: grey;
+    /* background-color: grey; */
     width: 100%;
     grid-gap: 20px;
 }
@@ -209,7 +209,7 @@ nav ul li:hover{
 
 .page2 .news .newsBox .newsCard {
   min-height: 250px;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 .page2 .news .newsBox .newsCard img{
     width: 100%;
@@ -223,6 +223,10 @@ nav ul li:hover{
     cursor: pointer;
     font-size: 15px;
     display: inline;
+}
+.page2 .news .newsBox .newsCard .text .title a{
+    color: white;
+    text-decoration: none;
 }
 .page2 .news .newsBox .newsCard .title p:hover{
     text-decoration: underline;

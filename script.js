@@ -1,3 +1,6 @@
+
+//Initialization starts
+
 let breakingImage = document.querySelector("#breakingImg");
 
 let breakingNewsTitle = document.querySelector("#breakingNews .title");
@@ -5,6 +8,15 @@ let breakingNewsTitle = document.querySelector("#breakingNews .title");
 let breakingNewsDesc = document.querySelector("#breakingNews .description");
 
 let topHeadlines = document.querySelector(".topNews");
+
+let sportsNewsBox = document.querySelector("#sportsNews .newsBox");
+
+let businessNewsBox = document.querySelector("#businessNews .newsBox");
+
+let techNewsBox = document.querySelector("#sportsNews .newsBox");
+
+//Initialization Ends
+
 
 /** API KEY*/
 const apiKey = "191f38e21db040aea2148a0a1e4e09a1";
@@ -28,7 +40,7 @@ const insertFlashNews = (data)=>{
     </a>`; // Adding Flash News Title to the page
     breakingNewsDesc.innerHTML =`${data[random].description}`;
 }
-window.addEventListener("load",fetchData('general',5).then(insertFlashNews));
+fetchData('general',5).then(insertFlashNews);
 
 
 /**Function For Inserting News to the Top Headlines Section */
@@ -60,6 +72,31 @@ const insertTopHeadlines =  (data)=>{
 });
 topHeadlines.innerHTML = htmlData;
 }
-    fetchData('general',15).then(insertTopHeadlines);
+fetchData('general',15).then(insertTopHeadlines);
 
+
+//Inserting News to respective Categories
+
+//1. Sports Category
+const insertSportsNewsBox = (data) =>{
+    let htmlData = "";
+    data.forEach((item)=>{
+        htmlData += `
+            <div class="newsCard">
+                <img src="${item.urlToImage}" alt="">
+                <div class="text">
+                    <div class="title">
+                        <a href= ${item.url} target = "_blank">
+                            <p>
+                            ${item.title}
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+            </div>`
+    });
+    sportsNewsBox.innerHTML = htmlData;
+}
+fetchData('sports',5).then(insertSportsNewsBox);
 
