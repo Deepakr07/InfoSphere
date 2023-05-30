@@ -107,6 +107,7 @@ nav ul li:hover{
 }
 .topHeadlines .left .text .title a{
     color: #ffffff;
+    text-decoration: none;
 }
 .topHeadlines .left .text .title h2:hover{
     text-decoration: underline;
@@ -152,6 +153,10 @@ nav ul li:hover{
     height: 120px;
     background-color: #a04;
 }
+.topHeadlines .right .topNews .news .img img{
+    width: 100%;
+    height: 100%;
+}
 .topHeadlines .right .topNews .news .text{
     margin-left: 10px;
   
@@ -163,7 +168,7 @@ nav ul li:hover{
     text-decoration: underline;
 }
 
-/* Seond section of the page starts*/
+/* Second section of the page starts*/
 .page2{
     width: 100%;
     padding: 50px;
