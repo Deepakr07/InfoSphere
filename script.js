@@ -20,9 +20,12 @@ const fetchData = async (categry,pageSize)=>{
 
 /**Adding Flash news to the Flash News Section */
 const insertFlashNews = (data)=>{
-    breakingImage.innerHTML = `<img src="${data[0].urlToImage}" alt="">`;//Addidng Flash news Image to the flash news section
-    breakingNewsTitle.innerHTML = `<h2>${data[0].content}</h2>`; // Adding Flash News Title to the page
-    breakingNewsDesc.innerHTML =`${data[0].description}`;
+    let random = Math.floor(Math.random() * 5);
+    breakingImage.innerHTML = `<img src="${data[random].urlToImage}" alt="">`;//Addidng Flash news Image to the flash news section
+    breakingNewsTitle.innerHTML = `<a href="${data[random].url}">
+        <h2>${data[random].content}</h2>
+    </a>`; // Adding Flash News Title to the page
+    breakingNewsDesc.innerHTML =`${data[random].description}`;
 }
 fetchData('general',5).then(insertFlashNews); 
 

@@ -105,6 +105,9 @@ nav ul li:hover{
     cursor: pointer;
     display: inline;
 }
+.topHeadlines .left .text .title a{
+    color: #ffffff;
+}
 .topHeadlines .left .text .title h2:hover{
     text-decoration: underline;
     
