@@ -115,6 +115,9 @@ nav ul li:hover{
     color: #aaa;
     letter-spacing: 1px;
 }
+.topHeadlines .left .text .description a{
+    color: #aaa;
+}
     /* left side completed */
 
     /* right side begins */
