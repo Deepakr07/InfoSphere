@@ -1,6 +1,5 @@
 let breakingImage = document.querySelector("#breakingImg");
-
-
+let breakingNewsTitle = document.querySelector("#breakingNews .title");
 
 
 /** API KEY*/
@@ -16,8 +15,10 @@ const fetchData = async (categry,pageSize)=>{
 
 }
 
-/**Adding Flash news to the Flash News Section */
+/**Adding Flash newsImage to the Flash News Section */
 const insertFlashNews = (data)=>{
-    breakingImage.innerHTML = `<img src="${data[0].urlToImage}" alt="">`
+    breakingImage.innerHTML = `<img src="${data[0].urlToImage}" alt="">`;
+    breakingNewsTitle.innerHTML = `<h2>${data[0].content}</h2>`; // Adding Flash News Title to the page
 }
-fetchData('general',5).then(insertFlashNews); 
+fetchData('general',5).then(insertFlashNewsImage); 
+
