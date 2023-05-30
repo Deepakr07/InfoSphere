@@ -35,14 +35,16 @@ fetchData('general',5).then(insertFlashNews);
 const insertTopHeadlines =  (data)=>{
     let htmlData = '';
     let title = '';
-    data.forEach((item)=>{
-        if(item.title.length < 100){
+
+    data.forEach((item) => {
+        if (item.title.length < 100){
             title = item.title;
         }
         else{
             title = item.title.slice(0,100) + "...";
         }
-        htmlData = 
+
+        htmlData += 
         `<div class="news">
             <div class="img">
                 <img src=${item.urlToImage} alt="to_headline Image">
