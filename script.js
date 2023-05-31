@@ -50,7 +50,7 @@ togglebtn.addEventListener("click", () => {
 
 
 /** API KEY*/
-const apiKey = "0590421cc0484c94b9312fb45c5eb74d";
+const apiKey = "e5b5c79ff0994e8c977aabf222e3c574";
 
 /*Async function to fetch data*/
 const fetchData = async (categry,pageSize)=>{
