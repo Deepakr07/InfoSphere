@@ -158,7 +158,7 @@ nav ul li:hover{
 }
 .topHeadlines .right .topNews{
     padding: 7px;
-    height: 85%;
+    height: 83%;
     border: 2px solid white;
     border-radius: 5px;
     overflow-y: scroll;
@@ -172,8 +172,7 @@ nav ul li:hover{
 .topHeadlines .right .topNews .news .img{
     width: 170px;
     height: 120px;
-    /* background-color: #a04; */
-    /* background-image: url("./Assets/no-preview-available.png"); */
+    background-image: url("./Assets/no-preview-available.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -239,6 +238,7 @@ nav ul li:hover{
     width: 100%;
     height: 150px;
     background-color:#a04;
+    background-image: url("./Assets/no-preview-available.png");
 }
 .page2 .news .newsBox .newsCard .text{
     padding: 1em;
@@ -355,6 +355,7 @@ color: white;
 /* 1. For 1024 px*/
 @media (max-width:1024px){
     
+    
     .topHeadlines .right .topNews .news .img {
         width: 150px;
     }
@@ -382,6 +383,7 @@ color: white;
     }
     .categories div, .contact div {
         font-size: 23px;
+        posi
     }
     
       .box {
@@ -413,13 +415,15 @@ color: white;
         display: block;
     }
 
-
+    .topHeadlines .right .topNews{
+        margin-left: -5em;
+    }
 
 
     nav ul{
         position:fixed;
         top: 80px;
-        left: -100%;
+        left: -130%;
         background-color: #191919;
         height: 100vh;
         width: 100vh;
@@ -441,6 +445,15 @@ color: white;
         border-left: 3px solid white;
         border-right: 3px solid white;
     }
-
+    .topHeadlines{
+        display: block;
+    }
+    .topHeadlines .right .topNews .news .img{
+        width: 220px;
+    }
+    .topHeadlines .right .topNews .news .text .title a p{
+        font-size: 18px;
+    }
 
 }
+
