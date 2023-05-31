@@ -89,13 +89,16 @@ nav ul li:hover{
 
 /* main news section starts */
     
-    /* left side */
 .topHeadlines{
+    background-image: url("./Assets/photo-1579800790234-cb5bd473ebe7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 100px 50px 40px;
     width: 100%;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
 }
+/* left side */
 .topHeadlines .left{
     padding: 10px 30px;
     /* background-color: grey; */
@@ -201,7 +204,7 @@ nav ul li:hover{
 .page2{
     width: 100%;
     padding: 50px;
-    background-color: #303030;
+    background-color: #000000;
     min-height: 100vh;
 }
 .page2 .news{
@@ -456,6 +459,8 @@ color: white;
 
 }
 
+
+/*Mobile screen design*/
 @media (max-width: 600px) {
 
     /* Header */
@@ -497,7 +502,7 @@ color: white;
   
     .topHeadlines .left > .title {
       padding: 10px;
-      font-size: 16px;
+      font-size: 25px;
     }
   
     .topHeadlines .left .img {
@@ -513,7 +518,7 @@ color: white;
     .topHeadlines .left .text {
       padding: 10px;
     }
-  
+    
     .topHeadlines .left .text .title h2 {
       font-size: 18px;
     }
@@ -580,7 +585,10 @@ color: white;
       margin-bottom: 10px;
       margin-right: 0;
     }
-  
+    .box .left {
+        display: flex;
+        justify-content: center;
+    }
     .categories div,
     .contact div {
       font-size: 16px;
