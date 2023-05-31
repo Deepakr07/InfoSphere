@@ -34,3 +34,35 @@
 
 ## NOTE
 The API used for this project is can be used for free only for development purpose , and if we need to deploy the project we should upgrade it to a paid version.
+
+## Demo
+
+https://github.com/Deepakr07/InfoSphere/assets/98033088/ec877502-0f3e-48c4-a3cb-8c9aeb6e934d
+
+
+
+
+## Screenshots
+
+![hero Section](https://github.com/Deepakr07/InfoSphere/assets/98033088/224a9d6b-5c8c-437f-915e-718bdc999afe)
+
+
+
+![Sports section](https://github.com/Deepakr07/InfoSphere/assets/98033088/e9c6ec2e-9efe-4359-8b97-aeac72f9a956)
+
+
+
+![Business Section](https://github.com/Deepakr07/InfoSphere/assets/98033088/022a8282-a59c-4dfc-a7c5-32ec0e2f774c)
+
+
+
+![Technology Section](https://github.com/Deepakr07/InfoSphere/assets/98033088/8455efa1-43c0-49f3-a4a8-edf6ee079ce8)
+
+
+
+![Footer](https://github.com/Deepakr07/InfoSphere/assets/98033088/009a5ba0-22e5-40ac-ab62-ee28c658428e)
+
+
+
+
+
