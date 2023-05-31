@@ -56,7 +56,12 @@ body{
 }
 nav ul{
     display:flex;
+    transition: 0.5s;
     justify-content: space-evenly;
+}
+.top-nav ul.ulClick{
+    transition: 0.5s;
+    left: 0%;
 }
 nav ul li{
     list-style: none;
@@ -73,6 +78,11 @@ nav ul li a {
 nav ul li:hover{
     border-left: .5px solid white;
     border-right: .5px solid white;
+}
+.menu-btn i{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
 }
 /* header styling completed */
 
@@ -366,7 +376,8 @@ color: white;
       }
 
       .footerHeading {
-        font-size: 35px;
+        font-size: 30px;
+        margin-right: 3em;
         margin-bottom: 20px;
     }
     .categories div, .contact div {
@@ -391,7 +402,45 @@ color: white;
     
       .right #subscribe {
         width: 70%;
-        margin-left: 6em;
+        margin-bottom: 2em;
       }
+
+}
+
+@media (max-width:780px){
+
+    nav .menu-btn i{
+        display: block;
+    }
+
+
+
+
+    nav ul{
+        position:fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #191919;
+        height: 100vh;
+        width: 100vh;
+        display: block;
+        text-align: center;
+    }
+    nav ul li{
+        margin:40px 0;
+        font-size: 20px;
+    }
+    nav ul li:hover{
+        border-right: none;
+    }
+    nav ul li a{
+        border-left: 3px solid #191919;
+        border-right: 3px solid #191919;
+    }
+    nav ul li a:hover{
+        border-left: 3px solid white;
+        border-right: 3px solid white;
+    }
+
 
 }

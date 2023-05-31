@@ -16,6 +16,10 @@ let techNewsBox = document.querySelector("#techNews .newsBox");
 
 let header = document.querySelector(".header");
 
+let togglebtn = document.querySelector(".fas.fa-bars");
+
+let nav = document.querySelector("nav ul");
+
 let fallbackImageUrl = "./Assets/no-preview-available.png"; //If the API Fails to load an image, then this default image will be diaplayed
 //Initialization Ends
 
@@ -28,7 +32,19 @@ window.addEventListener("scroll",()=>{
     header.classList.remove("sticky");
   }
 })
-
+//to make the nav bar responsive
+//when the toggle button is pressed it changes to xmark and displays the contents of the nav in block fashion
+togglebtn.addEventListener("click", () => {
+  if (nav.classList.contains("ulClick")) {
+    nav.classList.remove("ulClick");
+    togglebtn.classList.remove("fa-times");
+    togglebtn.classList.add("fa-bars");
+  } else {
+    nav.classList.add("ulClick");
+    togglebtn.classList.remove("fa-bars");
+    togglebtn.classList.add("fa-times");
+  }
+});
 
 
 
