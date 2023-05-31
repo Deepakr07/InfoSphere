@@ -33,7 +33,7 @@ window.addEventListener("scroll",()=>{
 
 
 /** API KEY*/
-const apiKey = "64c6bd38e1e946fc9c48788af137509d";
+const apiKey = "0590421cc0484c94b9312fb45c5eb74d";
 
 /*Async function to fetch data*/
 const fetchData = async (categry,pageSize)=>{
