@@ -338,3 +338,60 @@ color: white;
 }
 
 /* footer section ends */
+
+
+/*Media Queries*/
+
+/* 1. For 1024 px*/
+@media (max-width:1024px){
+    
+    .topHeadlines .right .topNews .news .img {
+        width: 150px;
+    }
+
+    .page2 .news .newsBox .newsCard .text {
+        padding: 5px;
+    }
+    .topHeadlines .right .topNews .news .text .title a p{
+        font-size: 14px;
+    }
+    .page2 .news .newsBox .newsCard img {
+        height: 120px;
+    }
+
+    /*Footer Part*/
+
+    footer {
+        padding: 3em 2em 0;
+      }
+
+      .footerHeading {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .categories div, .contact div {
+        font-size: 23px;
+    }
+    
+      .box {
+        flex-direction: column;
+      }
+    
+      .box .left {
+        flex: 1 1 100%;
+        padding: 1em;
+      }
+    
+      .box .right {
+        flex: 1 1 100%;
+        margin-top: 1em;
+        text-align: center;
+        margin-left: 1em;
+      }
+    
+      .right #subscribe {
+        width: 70%;
+        margin-left: 6em;
+      }
+
+}

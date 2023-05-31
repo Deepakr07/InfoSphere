@@ -19,6 +19,7 @@ let header = document.querySelector(".header");
 let fallbackImageUrl = "./Assets/no-preview-available.png"; //If the API Fails to load an image, then this default image will be diaplayed
 //Initialization Ends
 
+//to make the navbar sticky
 window.addEventListener("scroll",()=>{
   if(scrollY>50){
     header.classList.add("sticky");
