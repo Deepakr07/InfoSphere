@@ -14,8 +14,22 @@ let businessNewsBox = document.querySelector("#businessNews .newsBox");
 
 let techNewsBox = document.querySelector("#techNews .newsBox");
 
+let header = document.querySelector(".header");
+
 let fallbackImageUrl = "./Assets/no-preview-available.png"; //If the API Fails to load an image, then this default image will be diaplayed
 //Initialization Ends
+
+window.addEventListener("scroll",()=>{
+  if(scrollY>50){
+    header.classList.add("sticky");
+  }
+  else{
+    header.classList.remove("sticky");
+  }
+})
+
+
+
 
 
 /** API KEY*/
@@ -102,14 +116,14 @@ const insertBusinessNewsBox = (data) => {
     htmlData += `
       <div class="newsCard">
         <img src="${imageUrl}" alt="">
-          div class="text">
+        <div class="text">
           <div class="title">
             <a href="${item.url}" target="_blank">
               <p>${item.title}</p>
             </a>
-         </div>
-       </div>
-     </div>`;
+          </div>
+        </div>
+      </div>`;
     });
   businessNewsBox.innerHTML = htmlData;
  };
