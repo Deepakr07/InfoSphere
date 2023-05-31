@@ -70,7 +70,7 @@ const insertFlashNews = (data)=>{
      breakingNewsTitle.innerHTML = `<a href=${data[random].url} target="_blank"><h2>${data[random].title}</h2></a>`;
      breakingNewsDesc.innerHTML = data[random].description;
 }
-fetchData('general',5).then(insertFlashNews);
+fetchData('general',10).then(insertFlashNews);
 
 
 /**Function For Inserting News to the Top Headlines Section */
