@@ -6,6 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* custom scrollbar for the news section on the right */
 ::-webkit-scrollbar{
@@ -90,7 +93,9 @@ nav ul li:hover{
 .topHeadlines .left .img {
     width: 100%;
     height: 400px;
-    background-color: rgb(175, 65, 65);
+    background-image: url("./InfoSphere/no-preview-available.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .topHeadlines .left .img img{
     width: 100%;
@@ -151,7 +156,9 @@ nav ul li:hover{
 .topHeadlines .right .topNews .news .img{
     width: 170px;
     height: 120px;
-    background-color: #a04;
+    background-image: url("./InfoSphere/no-preview-available.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .topHeadlines .right .topNews .news .img img{
     width: 100%;
