@@ -5,7 +5,7 @@
  
  ## Features
 
-- **News Articles**: Get access to a wide range of news articles from different categories such as Business and technology.
+- **News Articles**: Get access to a wide range of news articles from different categories such as Sports, Business and technology.
 
 - **API Integration**: InfoSphere is integrated to News API to fetch real-time news data from reliable sources and deliver up-to-date information to the users.
 
