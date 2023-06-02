@@ -35,7 +35,7 @@
 ## NOTE
 The API used for this project is can be used for free only for development purpose , and if we need to deploy the project we should upgrade it to a paid version.
 
-## Demo
+## Demo Vedio
 
 https://github.com/Deepakr07/InfoSphere/assets/98033088/ec877502-0f3e-48c4-a3cb-8c9aeb6e934d
 
