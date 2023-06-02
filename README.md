@@ -33,7 +33,7 @@
 
 
 ## NOTE
-The API used for this project is can be used for free only for development purpose , and if we need to deploy the project we should upgrade it to a paid version.
+The API used for this project can only be used for free during the development stage. If we wish to deploy the project, we need to upgrade to a paid version.
 
 ## Demo Vedio
 
